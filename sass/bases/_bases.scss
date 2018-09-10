@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding:30px;
+    height: 5000px;    
+}
+
+html{
+     font-size: 62.5%;
+
+    @include phone (){
+        font-size: 50%;
+    };
+}

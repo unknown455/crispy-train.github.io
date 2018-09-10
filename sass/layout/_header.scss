@@ -1,0 +1,25 @@
+.header {
+    height: 95vh;
+    background-size: cover;
+    background-image:linear-gradient(to right ,$color-white-o, $color-red-o),url('../img/adorable-animal-animal-photography-1056251.jpg');
+    background-position: top;
+    clip-path:polygon(0 0 , 100% 0 , 100% 85vh , 0 100%);
+    
+    .logo-part {
+    position: absolute;
+    left:45px;
+    top:45px;
+        
+    .logo{
+    height: 80px;
+}
+}
+   .box-text{
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+       
+} 
+}

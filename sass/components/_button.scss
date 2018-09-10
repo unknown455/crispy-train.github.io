@@ -1,0 +1,113 @@
+.btn,.card-btn{
+    color:#262626;
+    padding:20px 40px;
+    display: inline-block;
+    margin-top:80px;
+    transition: all .2s ease-in-out;
+    position: relative;
+    
+    &:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px  rgb(60, 3, 3);
+}
+    
+    &:active{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgb(60, 3, 3);
+}
+    
+    &::after{
+    content: "";
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: all .5s;
+}
+    
+    &:hover::after{
+    transform: scale(1.3,1.6);
+    opacity: 0;
+}
+}
+
+
+.btn-bk,.card-btn{
+    background: #dbdbdb;
+    border-radius:20px;
+    text-decoration: none;
+    animation: moveToButton 1.5s ease-in-out 1s;
+    animation-fill-mode: backwards;
+    
+    &::after{
+    background: #dbdbdb;
+}
+}
+
+.about-learn-btn{
+    &:link,
+    &:visited 
+    {
+        background:none;
+        border-bottom: 2px solid #2a2a2a;
+        text-decoration: none;
+        color:#2a2a2a;
+        padding: 10px 20px;
+        transition: all .2s ease-out;
+    }
+    
+    &:hover
+    {
+        background-color:#2a2a2a;
+        color:$color-grey;
+        border-radius:5px;
+        box-shadow: 0 5px 10px #2a2a2a;
+    }
+    
+    &:active
+    {
+        box-shadow: 0 2.5px 10px #2a2a2a;
+    }
+}
+
+.card-btn
+{
+    margin-top:-70px;
+    font-size:25px;
+    letter-spacing: 2px;
+    background: #ffffff;
+    width: 135px;
+    height: 40px;
+    margin: 0;
+    padding:0;
+    animation: none;
+}
+
+.bCard-1{
+    &:hover{
+    box-shadow: 0 10px 20px  rgb(50, 0, 54);
+}
+}
+.bCard-2{
+    &:hover{
+    box-shadow: 0 10px 20px  rgb(0, 54, 4);
+}
+}
+.bCard-3{
+    &:hover{
+    box-shadow: 0 10px 20px  rgb(0, 54, 54);
+}
+}
+
+.nextStep-btn{
+    height: 50px;
+    width:200px;
+    margin-top: 100px;
+    margin-left: 35px;
+    padding:7px;
+    
+}

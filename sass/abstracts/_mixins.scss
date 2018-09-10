@@ -1,0 +1,27 @@
+/*
+0-600        phone
+600-900      tab-port
+900-1200     tab-land
+1200-1800    normal style
+1800 +       big disktop
+*/
+
+/*
+$breakpoint 
+-phone
+-tab-port
+-tab-land
+-big-desk
+*/
+
+@mixin phone {
+    @media (max-width:37.5em) /* 600px */ {@content};
+}
+
+@mixin tab-port {
+    @media (max-width:56.25em) /* 900px */ {@content}
+}
+
+@mixin tab-lang {
+    @media (max-width:75em) /* 1200px */ {@content}
+}

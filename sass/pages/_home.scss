@@ -1,0 +1,35 @@
+.section-about{
+    padding:250px 0 ;
+    background: $color-grey;
+    margin-top:-25vh;
+    padding-bottom: 550px;
+} 
+
+.features-section{
+    height: 95vh;
+    padding:85px 65px;
+    background-size: cover;
+    background-image:linear-gradient(to right ,$color-white-o, #2a276faf),url('../img/cat-feat.jpg');
+    background-position: top;
+    transform: skewY(-7deg);
+    &>*{
+        transform: skewY(7deg);
+    }
+    margin-top:-89px;
+}
+
+.category-section{
+    padding:350px 65px ;
+    padding-bottom: 750px;
+    margin-top: -90px;
+    text-align: center;
+}
+.story-section{
+    position: relative;
+    padding:150px;
+    clip-path:polygon(0 0 , 100% 15% , 100% 100% , 0 100%)
+}
+.booking-section{
+    background-image: linear-gradient(to right , #393939,#0f0606);
+    padding: 150px    ;
+} 

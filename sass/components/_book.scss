@@ -1,0 +1,13 @@
+.book{
+    background-image: linear-gradient(105deg , #ffffffbf 0% ,#ffffffbf 50% ,transparent 50%),
+                                      url('../../img/card3.jpg');
+    background-size: cover;
+    height: 650px;
+    border-radius: 3px ;
+    box-shadow: 3px 3px  20px #8e8e8e;
+    
+    .book-form{
+        width:50%;
+        padding:50px;
+    }
+}

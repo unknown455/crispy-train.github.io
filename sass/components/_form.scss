@@ -1,0 +1,98 @@
+.form-group{
+    
+    &>*{
+        margin-bottom: 20px;
+    }
+                .head-style-g {
+                margin-bottom: 60px;
+            }
+    .form-input{
+        font-size: 15px;
+        padding:15px 20px;
+        border-radius: 3px;
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        color:#450202;
+        
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem #c7c7c71f;
+            border-bottom: 3px solid #000000;
+        }
+        
+        &::-webkit-input-placeholder{
+            color:#000000;
+            font-weight: lighter;
+        }
+        
+        &:focus:invalid{
+            border-bottom: 3px solid #ea0d0d;
+        }
+        
+    }
+    
+    .form-label{
+        display: block;
+        margin-left: 20px;
+        margin-top:10px;
+        transition: all .3s;
+        color:#070e5f
+    }
+    
+    .form-input:placeholder-shown + .form-label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+    }
+    
+    .radio-form{
+        display: inline-block;
+        width:30%;
+        margin-left: 40px;
+        
+        .radio-label{
+            font-size: 25px;
+            position: relative;
+            padding-left:25px;
+        
+            .r-btn{
+                height:2.5rem;
+                width:2.5rem;
+                border: 3px solid #000000;
+                border-radius: 50%;
+                display: inline-block;
+                position: absolute;
+                left:-23px;
+                top:2.5px;
+                
+                &::after{
+                    content: "";
+                    width: .8rem;
+                    height: .8rem;
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    top:50%;
+                    transform:translate(-50%,-50%);
+                    border-radius: 50%;
+                    background: #000000;
+                    opacity: 0;
+                    transition: opacity .4s;
+                }
+            }
+        }
+        .radio-btn{
+            display: none;
+        }
+        .radio-btn:checked ~ .radio-label .r-btn::after{
+                opacity: 1;
+        }
+    }
+        .form-btn{
+            width: 100%;
+            margin-top: 100px;
+            margin:0 auto;
+        }
+}

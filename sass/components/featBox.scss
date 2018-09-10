@@ -1,0 +1,36 @@
+.features{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    height: 95%;
+
+    .grid-style{
+    width:50%;
+    background:#e8e8e8;
+    padding:35px;
+    margin-top: 90px;
+    text-align: center;
+    box-shadow: 2px 5px 20px #1a1a1a;
+    transition: all .3s ease-in-out;
+        
+     
+        
+        &:not(:last-child){
+             margin-right: 20px;
+        }
+
+        .feat-icon{
+            padding: 10px 0 ;
+            font-size: 60px;
+            background-image: linear-gradient(to right , #00b1ffbf ,#2a276fff);
+            -webkit-background-clip: text;
+            color:transparent;
+            
+            
+        }
+        &:hover{
+            transform: scale(1.04) translateY(-10px);
+        }
+}
+    
+}

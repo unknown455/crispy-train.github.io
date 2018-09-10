@@ -1,0 +1,42 @@
+@keyframes moveToR {
+    
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    60%{
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveToL {
+    
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    60%{
+        transform: translate(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveToButton {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
